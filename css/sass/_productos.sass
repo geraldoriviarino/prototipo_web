@@ -1,0 +1,119 @@
+
+#opciones_productos
+    margin-top: 30px
+    display: flex
+    justify-content: space-around
+
+.opcion-producto
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    background-color: #FFFFFF
+    height: 50px
+    box-shadow: 3px 3px 8px grey
+    +transition(opacity .5s ease-in)
+
+    &:hover        
+        cursor: pointer
+        background-color: $color_primario
+        box-shadow: 3px 3px 20px grey
+        +transition(all 175ms ease-in)
+        +transform(scale(1.2))
+
+        i
+            color: $color_rojo_oscuro_1
+        span
+            color: white
+
+    *
+        margin-left: 10%
+
+    i
+        color: $color_primario
+        font-size: 2em
+
+    span
+        color: $color_gris_oscuro
+        font-weight: bold
+
+h2.titulo-productos
+    font-weight: bold
+    margin: 40px 0 0 10px
+
+#saludo_titulo
+    color: #818181
+    font-weight: normal
+
+.producto
+    background-color: #FFFFFF
+    width: 215px!important
+    text-align: center
+    margin-top: 20px
+    padding-bottom: 10px
+    box-shadow: 3px 3px 8px grey
+    +transition(all 120ms ease-in)
+    
+    .detalle-producto
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: $color_primario
+        overflow: hidden
+        width: 100%
+        height: 0
+
+    .boton-detalle-producto
+        background-color: $color_rojo_oscuro_1
+        color: white
+        border: none
+        padding: 10px
+        position: absolute
+        cursor: pointer
+        top: 50%
+        left: 50%
+        +transform(translate(-50%, -50%))
+
+    &:hover
+        box-shadow: 3px 3px 8px grey
+        +transition(all, 120ms, ease-in)
+        +transform(scale(1.05))
+
+        .detalle-producto
+            height: 100%
+            +transition(all .5s ease)
+
+
+.categoria-producto
+    background-color: $color_primario
+    width: 40%
+    margin: 10px 0 0 10%
+    padding: 0 5px 0 5px
+    +border-radius(10px)
+
+    span
+        color: white
+        font-weight: bold
+
+.foto-producto
+    width: 125px
+    height: auto
+    margin: 30px 0 30px 0
+
+.nombre-producto
+    color: $color_gris_oscuro
+    font-weight: bold
+    margin: 30px 10px 0 10px
+
+.precio-producto
+    font-size: 2em
+    font-style: italic
+    font-weight: bold
+
+.info-envio
+    margin-bottom: 10px
+    font-weight: bold
+    color: #7AB64B
+
+.vertical-padding-10
+    padding: 10px 0 10px 0

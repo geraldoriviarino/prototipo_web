@@ -1,0 +1,30 @@
+$color_primario: #D14545
+$color_rojo_claro: #EAAAAA
+$color_rojo_oscuro_1: #862C2C
+$color_rojo_oscuro_2: #4C1A1A
+$color_gris_oscuro: #818181
+$color_gris_claro: #EBECED
+$margen_carrusel: -2 * 940 //Tamaño del grid escogido (12 columnas - márgenes).
+
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+=contenido-centrado
+    display: flex
+    align-items: center
+    justify-content: center
+
+=transition($argumentos...)
+    -webkit-transition: $argumentos
+    -ms-transition: $argumentos
+    -moz-transition: $argumentos
+    transition: $argumentos
+
+=transform($argumentos...)
+    -webkit-transform: $argumentos
+    -ms-transform: $argumentos
+    -moz-transform: $argumentos
+    transform: $argumentos

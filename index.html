@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- Estilos para neutralizar la apariencia entre navegadores -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Estilos del 960 grid para las columnas -->
+	<link rel="stylesheet" type="text/css" href="css/960grid/min/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/960grid/min/text.css">
+	<link rel="stylesheet" type="text/css" href="css/960grid/min/960.css">
+	<!-- Estilos de font-awesome para los iconos -->
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Estilos principales de la página -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Tu tienda online de informática</title>
+</head>
+<body>
+	<!-- Contenido principal de la página -->
+	<main class="container_12">
+		<!-- Cabecera -->
+		<header id="header" class="grid_12 vertical-padding-10">
+			<div class="delimitador-rojo"></div>
+
+			<!-- Contenedor logo -->
+			<div class="container-logo grid_3 alpha">
+				<a class="sin-decoracion" href="#">
+					<img class="logo" src="img/logotienda.png" alt="Logo de la empresa.">
+					<h1>Tech Revolution</h1>
+				</a>
+			</div> <!-- Fin contenedor logo -->
+
+			 <!-- Contenedor del campo de búsqueda -->
+			<div id="container_busqueda" class="grid_5 sufix_1">
+				<form action="index_submit" method="get" accept-charset="utf-8">
+					<input id="campo_busqueda" type="text" name="busqueda" placeholder="Busca algún producto">
+				</form>
+			</div> <!-- Fin contenedor búsqueda -->
+
+			<!-- Contenedor de las opciones de usuario -->
+			<div id="container_usuario" class="grid_3">
+				<!-- Contenedor de la opción de usuario -->
+				<div id="container_sesion" class=" alpha grid_2">
+					<a class="sin-decoracion" href="">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+						<span class="titulo">Entra o regístrate</span>
+					</a>				
+				</div> <!-- Fin contenedor de opciones de usuario -->
+
+				<!-- Contenedor del carrito -->
+				<div id="container_carrito" class="grid_1">
+					<a class="sin-decoracion" href="">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span class="titulo">Mi carrito</span>
+					</a>		
+				</div> <!-- Fin contenedor carrito -->	
+			</div> <!-- Fin contenedor de opciones de usuario -->
+		</header> <!-- Fin de la cabecera -->
+
+		<!-- Contenedor de navegación o menú -->
+		<nav id="nav" class="grid_12">
+			<ul id="menu">
+				<li><a class="sin-decoracion" href="#">Componentes</a></li>
+				<li><a class="sin-decoracion" href="#">Ordenadores</a></li>
+				<li><a class="sin-decoracion" href="#">Smartphones</a></li>
+				<li><a class="sin-decoracion" href="#">Periféricos</a></li>
+				<li><a class="sin-decoracion" href="#">Audio/Foto/Vídeo</a></li>
+				<li><a class="sin-decoracion" href="#">Televisores</a></li>
+				<li><a class="sin-decoracion" href="#">Gaming</a></li>
+				<li><a class="sin-decoracion" href="#">Todas las categorías</a></li>
+			</ul>
+		</nav> <!-- Fin contenedor de navegación -->
+
+		<!-- Contenedor de la sección principal de la página -->
+		<section>
+			<!-- Contenedor del carrussel o slider -->
+			<div id="carrussel" class="grid_12">
+				<img class="foto-carrusel escondido" src="img/foto_carrusel1.png" alt="Corsair.">
+				<img class="foto-carrusel" src="img/foto_carrusel2.jpg" alt="Razer.">
+				<img class="foto-carrusel escondido" src="img/foto_carrusel3.jpg" alt="Nvidia.">
+
+				<!-- Contenedor de los círculos de la paginación del carrussel -->
+				<div id="contenedor_circulos">
+					<div class="carrusel-page current"></div>
+					<div class="carrusel-page "></div>
+					<div class="carrusel-page"></div>
+				</div> <!-- Fin contenedor de los círculos -->
+				<div id="btn_izquierda" class="contenedor-flecha izq no-seleccionable"><div class="flecha"><span>&#10094;</span></div></div>
+				<div id="btn_derecha" class="contenedor-flecha der no-seleccionable"><div class="flecha"><span>&#10095;</span></div></div>
+			</div>
+
+			<!-- Contenedor de opciones de productos  -->
+			<div id="opciones_productos" class="grid_12">
+				<!-- Opción de producto -->
+				<div class="opcion-producto grid_3">
+					<i class="fa fa-tag" aria-hidden="true"></i>
+					<span class="nombre-opcion">Ofertas</span>
+				</div> <!-- Fin de opción de producto -->
+
+				<!-- Opción de producto -->
+				<div class="opcion-producto grid_3">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<span class="nombre-opcion">Novedades</span>
+				</div> <!-- Fin de opción de producto -->
+
+				<!-- Opción de producto -->
+				<div class="opcion-producto grid_3">
+					<i class="fa fa-gift" aria-hidden="true"></i>
+					<span class="nombre-opcion">Promociones</span>
+				</div> <!-- Fin de opción de producto -->
+
+				<!-- Opción de producto -->
+				<div class="opcion-producto grid_3">
+					<i class="fa fa-refresh" aria-hidden="true"></i>
+					<span class="nombre-opcion">Rastrillo</span>
+				</div> <!-- Fin de opción de producto -->
+			</div> <!-- Fin contenedor opciones de productos -->
+
+			<!-- Contenedor de los productos -->
+			<article id="productos" class="grid_12">
+				<!-- Título de la sección de productos -->
+				<h2 class="titulo-productos">HOLA, <span id="saludo_titulo">MIRA LO QUE TENEMOS PARA TI</span></h2>
+				
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+
+				<!-- Contenedor producto -->
+				<div class="producto grid_3">
+					<div class="detalle-producto">
+						<button class="boton-detalle-producto"> Ver detalles </button>
+					</div>
+					<div class="categoria-producto">
+						<span>PROMOCIÓN</span>
+					</div>
+					<img class="foto-producto" src="img/monitor_bq.png" alt=""><br>
+					<span class="nombre-producto">BenQ Zowie XL2430 24"LED 144Hz eSports</span><br>
+					<span class="precio-producto">350 €</span><br>
+					<span class="info-envio">Recíbelo mañana</span>
+				</div> <!-- Fin contenedor producto -->
+			</article> <!-- Fin contenedor productos -->
+		</section> <!-- Fin contenedor sección principal -->
+
+		<!-- Pie de página -->
+		<footer class="grid_12">
+			<div class="delimitador-rojo"></div>
+
+			<!-- Contenido del pie de página -->
+			<div id="contenido_footer">
+				<!-- Contenedor del logo -->
+				<div class="container-logo grid_6">
+					<a class="sin-decoracion" href="#">
+						<img class="logo" src="img/logotienda.png" alt="Logo de la empresa.">
+						<h1>Tech Revolution</h1>
+					</a>				
+				</div> <!-- Fin contenedor logo -->
+
+				<!-- Contenedor redes sociales -->
+				<div id="contenedor_rrss" class="grid_4">
+					<a class="sin-decoracion" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="sin-decoracion" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a class="sin-decoracion" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+					<a class="sin-decoracion" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a class="sin-decoracion" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</div> <!-- Fin contenedor redes sociales -->
+
+				<!-- Contenedor geolocalización -->
+				<div id="contenedor_geolocalizacion" class="grid_1">
+					<small><i class="fa fa-map-marker" aria-hidden="true"></i><span id="pais">España</span></small>
+				</div> <!-- Fin contenedor geolocalización -->
+				<div class="clear"></div>
+
+				<!-- Contenedor de información legal -->
+				<div id="informacion_legal" class="grid_12">
+					<a class="sin-decoracion" href="#"><span>Condiciones de uso</span></a>
+					<a class="sin-decoracion" href="#"><span>Aviso legal</span></a>
+					<a class="sin-decoracion" href="#"><span>Privacidad</span></a>
+					<a class="sin-decoracion" href="#"><span>Derechos de uso</span></a>
+					<a class="sin-decoracion" href="#"><span>Condiciones de venta</span></a>
+					<a class="sin-decoracion" href="#"><span>Contacto</span></a>
+					<a class="sin-decoracion" href="#"><span>Derechos de contenidos</span></a>
+				</div> <!-- Fin contenedor de información legal -->
+			</div> <!-- Fin contenido del pie de página -->
+		</footer> <!-- Fin pie de página -->
+
+		<!-- Botón de ascenso al principio de la página -->
+		<button id="btn_top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+	</main><!-- Fin del contenido principal de la página -->
+
+	<!-- Scripts -->
+	<script src="js/carrusel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/manejo_general.js" type="text/javascript"></script>
+</body>
+</html>
